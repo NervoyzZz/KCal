@@ -1,0 +1,62 @@
+<!-- Нерпяхин Д.
+    тут дефолтные строки
+    комментировать ничего не буду, так как разбираться тут не в чем.
+    Хочешь использовать строку - создаешь ее сдесь и используешь.-->
+<resources>
+    <string name="app_name">KCal</string>
+    <string name="btnCalculateKcal_text">Calculate</string>
+    <string name="btnHowTo_text">How to use</string>
+    <string name="btnAbout_text">About</string>
+    <string name="btnSendMessage_text">Feedback</string>
+
+    <string name="intent_SendMail">mailto:</string>
+    <string name="intent_SubjectMail">KCal feedback</string>
+    <string name="intent_ToMail">nervoidaz@yandex.ru</string>
+
+    <!-- Все таки комментарий будет.
+         Это сочетание кавычек и пробела сдесь для того, чтобы выровнять список -->
+    <string name="txtvHowTo">
+        " "1) Click \"Calculate\"\n
+        2) Input how much products you\'ve eaten\n
+        3) Click on the \"Result\" and app gets you an answer\n
+        App doesn\'t guarantee 100% correct\n
+    </string>
+
+    <string name="txtvAbout">
+        This app is designed for anyone who is on a diet and \"calculate \" calories.
+        The application features the most popular products, you just have to enter
+        the quantity of eaten and see the result. We recommend to use a kitchen scale.
+        \n
+        You can send me your \"Feedback\" by click on it.
+        \n
+        App\'s developer: \nD. O. Nepryahin\n
+        Final project for StudyJams \nAndroid for beginners\n
+    </string>
+
+    <string name="btnResult">Result</string>
+    <string name="btnNull">Reset</string>
+
+    <string name="txtvPotato">Potato</string>
+    <string name="txtvCucumber">Cucumber</string>
+    <string name="txtvFish">Fish</string>
+    <string name="txtvBread">Bread</string>
+    <string name="txtvBuckwheat">Buckwheat</string>
+    <string name="txtvOrange">Orange</string>
+    <string name="txtvApple">Apple</string>
+    <string name="txtvChocolate">Chocolate</string>
+    <string name="txtvKefir">Kefir</string>
+    <string name="txtvPork">Pork</string>
+    <string name="txtvKokoko">Chicken</string>
+
+    <string name="editxtHint">Quantity in grams</string>
+    <string name="chkbxKefir">1\u0025</string>
+
+    <string name="strToast_Nothing">All fields\'re empty!</string>
+
+    <string name="strResult_begin">Your result: %.2f Kcal. \n</string>
+    <string name="strResult_end">" "The daily ration is 1200 Kcal. It\'s better to eat often but small pieces.</string>
+    <string name="strResultGood">Nice work! </string>
+    <string name="strResultBad">It\'s not good if you\'re on a diet. Watch yourself! </string>
+    <string name="strResultVerybad">Seriously? Are you preparing to hibernation? </string>
+    <string name="strResultFatMan">Culm down! You probably don\'t fit in the chair! </string>
+</resources>

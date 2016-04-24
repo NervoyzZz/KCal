@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Непряхин Д.-->
+<resources>
+    <!-- Стандартные цвета-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- Цвета которые я использую-->
+    <color name="colorBlack">#000000</color>
+    <!-- А эти добавились после того, как я "подправил" тему в theme editor-->
+    <color name="accent_material_light">#ff4081</color>
+    <color name="primary_material_light">#3f51b5</color>
+    <color name="primary_dark_material_light">#303f9f</color>
+</resources>

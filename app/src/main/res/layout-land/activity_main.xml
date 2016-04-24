@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Непряхин Д.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parentView_style"
+    tools:context="nepryahin_daniil.kcal.MainActivity">
+
+    <!-- Та же самая стартовая активность, все те же элементы
+         и их назначение, предназначенная для тех случаев, когда
+         телефон в горизонтальном положении. -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_LinearL1"
+        android:layout_marginTop="@dimen/main_layout_top_margin_land">
+
+        <Button
+            style="@style/MainBtnStyle"
+            android:layout_weight="1"
+            android:id="@+id/btnCalculateKcal"
+            android:text="@string/btnCalculateKcal_text"
+            android:onClick="onClick_CalculateKcal"/>
+        <Button
+            style="@style/MainBtnStyle"
+            android:layout_weight="1"
+            android:id="@+id/btnHowTo"
+            android:text="@string/btnHowTo_text"
+            android:onClick="onClick_HowTo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_LinearL2"
+        android:layout_below="@+id/main_LinearL1"
+        android:layout_marginTop="@dimen/main_layout_top_margin_land">
+
+        <Button
+            style="@style/MainBtnStyle"
+            android:layout_weight="1"
+            android:id="@+id/btnAbout"
+            android:text="@string/btnAbout_text"
+            android:onClick="onClick_About"/>
+        <Button
+            style="@style/MainBtnStyle"
+            android:layout_weight="1"
+            android:id="@+id/btnSendMessage"
+            android:text="@string/btnSendMessage_text"
+            android:onClick="onClick_SendMessage"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgvLogo"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/main_LinearL2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

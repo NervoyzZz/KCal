@@ -1,0 +1,84 @@
+<!-- Непряхин Д.-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Тема для активити во весь экран и без панельки с названием
+         Цвета немного подправил в "theme editor", чтобы они совпадали с
+         цветами в AppTheme-->
+    <style name="AppTheme_NoActionBar_Fullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Стиль, который используют "самые" родительские элементы на Activity -->
+    <style name="parentView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Стиль для кнопок на главной активности-->
+    <style name="MainBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/main_btn_bottom_margin</item>
+        <item name="android:layout_marginLeft">@dimen/main_btn_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/main_btn_side_margin</item>
+    </style>
+
+    <!-- Стиль для элементов на активности, где проходят вычисления -->
+    <style name="CalcActivityViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/calc_activity_views_margin_bottom</item>
+    </style>
+
+    <!-- А этот стиль используют Linear layout'ы из которых я составляю список продуктов-->
+    <style name="CalcActivityLinearLlistStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/calc_activity_views_margin_bottom</item>
+    </style>
+
+    <!-- Стиль для TextView на activity_calculate_products-->
+    <style name="CalcActivityTxtvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/products_text_size</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!-- Стиль для поля для ввода на все той же активити-->
+    <style name="CalcActivityEditxtStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textSize">@dimen/products_text_size</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:hint">@string/editxtHint</item>
+        <item name="android:layout_marginLeft">@dimen/products_editxt_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/products_editxt_margin_right</item>
+    </style>
+
+    <!-- Стиль для TextView на активити с темой Dialog -->
+    <style name="DialogTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dialog_activity_text_margin</item>
+        <item name="android:textSize">@dimen/dialog_activity_text_size</item>
+    </style>
+
+</resources>

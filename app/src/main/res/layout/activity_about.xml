@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Непряхин Д. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/parentView_style">
+
+    <!-- Ничего сложного, просто активность с текстом о моем приложении-->
+    <TextView
+        style="@style/DialogTextViewStyle"
+        android:text="@string/txtvAbout"/>
+</ScrollView>

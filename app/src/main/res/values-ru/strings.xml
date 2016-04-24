@@ -1,0 +1,62 @@
+<!-- Нерпяхин Д.
+    тут строки для русского языка
+    комментировать ничего не буду, так как разбираться тут не в чем.
+    Хочешь использовать строку - создаешь ее сдесь и используешь.-->
+<resources>
+    <string name="app_name">KCal</string>
+    <string name="btnCalculateKcal_text">Считать</string>
+    <string name="btnHowTo_text">Как пользоваться</string>
+    <string name="btnAbout_text">О приложении</string>
+    <string name="btnSendMessage_text">Отправить отзыв</string>
+
+    <string name="intent_SendMail">mailto:</string>
+    <string name="intent_SubjectMail">Отзыв о KCal</string>
+    <string name="intent_ToMail">nervoidaz@yandex.ru</string>
+
+    <!-- Все таки комментарий будет.
+         Это сочетание кавычек и пробела сдесь для того, чтобы выровнять список -->
+    <string name="txtvHowTo">
+        " "1) Нажмите \"Считать\"\n
+        2) Вводите сколько граммов продуктов вы употребили\n
+        3) Нажмите на \"Результат\", и приложение выдаст вам ответ.\n
+        Приложение не гарантирует 100% правильность!\n
+    </string>
+
+    <string name="txtvAbout">
+        Данное приложение предназначено для тех, кто сидит на диете и \"считает\" калории.
+        В приложении представлены самые популярные продукты, вам остается только ввести
+        количество съеденного и увидеть результат. Рекомендуется использовать кухонные весы.
+        \n
+        Нажмите \"Отправить отзыв\" для обратной связи с разработчиком.
+        \n
+        Разработчик приложения: \nД. О. Непряхин\n
+        Итоговый проект StudyJams \nAndroid for beginners\n
+    </string>
+
+    <string name="btnResult">Результат</string>
+    <string name="btnNull">Сброс</string>
+
+    <string name="txtvPotato">Картофель</string>
+    <string name="txtvCucumber">Огурец</string>
+    <string name="txtvFish">Рыба</string>
+    <string name="txtvBread">Хлеб ржаной</string>
+    <string name="txtvBuckwheat">Греча</string>
+    <string name="txtvOrange">Апельсин</string>
+    <string name="txtvApple">Яблоко</string>
+    <string name="txtvChocolate">Шоколад</string>
+    <string name="txtvKefir">Кефир</string>
+    <string name="txtvPork">Свинина</string>
+    <string name="txtvKokoko">Курица</string>
+
+    <string name="editxtHint">Количество в граммах</string>
+    <string name="chkbxKefir">1\u0025</string>
+
+    <string name="strToast_Nothing">Все поля пусты!</string>
+
+    <string name="strResult_begin">Ваш результат: %.2f Ккал. \n</string>
+    <string name="strResult_end">" "Дневная норма 1200 Ккал. Лучше есть маленькими порциями, но часто.</string>
+    <string name="strResultGood">Так держать!</string>
+    <string name="strResultBad">Не очень хорошо, если вы на диете, следите за собой!</string>
+    <string name="strResultVerybad">Ого! Вы серьезно? К зимней спячке готовитесь?</string>
+    <string name="strResultFatMan">Полегче! Вы наверно уже и в стул не помещаетесь?</string>
+</resources>

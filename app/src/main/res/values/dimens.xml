@@ -1,0 +1,29 @@
+<!-- Непряхин Д. -->
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Мои отступы и прочие значения для разметки -->
+
+    <!-- Из названия следует, что эту группу отступов я использую на
+    главной активности -->
+    <dimen name="main_btn_side_margin">25dp</dimen>
+    <dimen name="main_btn_bottom_margin">10dp</dimen>
+    <dimen name="main_btn_top_margin">50dp</dimen>
+    <dimen name="main_layout_top_margin_land">15dp</dimen>
+
+    <!-- Этот отступ я использую в вспомогательных окнах HowTo, About и ShowResult-->
+    <dimen name="dialog_activity_text_margin">5dp</dimen>
+    <!-- А это значение размера текста в этих окнах -->
+    <dimen name="dialog_activity_text_size">15sp</dimen>
+
+    <!-- эти значения нужны в CalculateProductsActivity
+        я стараюсь давать понятные названия, так что комментариев
+        не много-->
+    <dimen name="calc_activity_views_margin_bottom">15dp</dimen>
+    <dimen name="products_text_size">14sp</dimen>
+    <dimen name="products_editxt_margin_left">10dp</dimen>
+    <dimen name="products_editxt_margin_right">5dp</dimen>
+
+</resources>

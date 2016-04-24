@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Непряхин Д.-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/parentView_style">
+
+    <!-- Активность со списком продуктов и полями для ввода значений
+         ну и кнопочками для того, чтобы посчитать калории и сбросить сначения
+         в заполненых полях, чтобы посчитать заново с другими значениями и продуктами-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/CalcActivityViewStyle"
+            android:id="@+id/btnResultUp"
+            android:text="@string/btnResult"
+            android:onClick="onClick_Calc_Result"/>
+        <Button
+            style="@style/CalcActivityViewStyle"
+            android:id="@+id/btnNullUp"
+            android:text="@string/btnNull"
+            android:onClick="onClick_Nulledtxt"/>
+
+        <!-- Тут сейчас будет ужас... К сожалению, знаний, полученных на курсе для "самых" начинающих
+             недостаточно, чтобы реализовать мою задумку эффективно. Насчет эффективности можно задумываться
+             не только в этом месте, но цель курса не "эффективное программирование на android", так что, извините
+             за такую реализацию.
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             В этой стене кода я просто создаю список продуктов и поля для ввода их количества-->
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvPotato"
+                android:text="@string/txtvPotato"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtPotato"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvCucumber"
+                android:text="@string/txtvCucumber"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtCucumber"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvFish"
+                android:text="@string/txtvFish"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtFish"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvBread"
+                android:text="@string/txtvBread"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtBread"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvBuckwheat"
+                android:text="@string/txtvBuckwheat"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtBuckwheat"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvOrange"
+                android:text="@string/txtvOrange"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtOrange"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvApple"
+                android:text="@string/txtvApple"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtApple"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvChocolate"
+                android:text="@string/txtvChocolate"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtChocolate"/>
+        </LinearLayout>
+        <!-- Внимание! тут добавляется новый элемент Checkbox
+             Сложная структура получилась, но зато более приятно
+             для глаза.-->
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    style="@style/CalcActivityTxtvStyle"
+                    android:id="@+id/txtvKefir"
+                    android:text="@string/txtvKefir"/>
+                <!-- Тут студия предлагает сделать по другому, но
+                     если следовать ее совету, то вид получается не такой,
+                     как я хочу.-->
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/chlbxKefir"
+                    android:text="@string/chkbxKefir" />
+                </LinearLayout>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtKefir"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvPork"
+                android:text="@string/txtvPork"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtPork"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/CalcActivityLinearLlistStyle">
+            <TextView
+                style="@style/CalcActivityTxtvStyle"
+                android:id="@+id/txtvKokoko"
+                android:text="@string/txtvKokoko"/>
+            <EditText
+                style="@style/CalcActivityEditxtStyle"
+                android:id="@+id/editxtKokoko"/>
+        </LinearLayout>
+        <!-- Ужас закончился -->
+
+        <Button
+            style="@style/CalcActivityViewStyle"
+            android:id="@+id/btnNullDown"
+            android:text="@string/btnNull"
+            android:onClick="onClick_Nulledtxt"/>
+        <Button
+            style="@style/CalcActivityViewStyle"
+            android:id="@+id/btnResultDown"
+            android:text="@string/btnResult"
+            android:onClick="onClick_Calc_Result"/>
+    </LinearLayout>
+
+</ScrollView>
